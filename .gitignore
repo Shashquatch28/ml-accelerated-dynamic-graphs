@@ -331,25 +331,48 @@ Thumbs.db
 *.log
 logs/
 
-# Data files (uncomment if you want to ignore data)
-# *.csv
-# *.json
-# *.xml
-# *.h5
-# *.hdf5
-# *.pkl
-# *.pickle
-
-# Model files (uncomment if you want to ignore trained models)
-# *.pth
-# *.pt
-# *.ckpt
-# *.h5
-# *.pb
-# *.onnx
-
 # Jupyter notebook checkpoints
 .ipynb_checkpoints/
 
 # Project specific
-test-file.py
+test-file.py  
+
+# Conda environment specific
+.conda/
+conda-meta/
+envs/
+pkgs/
+conda-bld/
+.condarc
+
+# ML/Data Science specific
+*.pkl
+*.pickle
+*.h5
+*.hdf5
+*.joblib
+*.model
+*.weights
+checkpoints/
+models/
+data/
+datasets/
+*.csv
+*.tsv
+*.json
+*.parquet
+
+# Jupyter notebook outputs
+*.ipynb
+
+# IDE specific
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS specific
+.DS_Store
+Thumbs.db
+ehthumbs.db

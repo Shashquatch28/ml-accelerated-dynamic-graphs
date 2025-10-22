@@ -28,6 +28,13 @@ Documentation = "https://ml-accelerated-dynamic-graphs.readthedocs.io"
 Repository = "https://github.com/yourusername/ml-accelerated-dynamic-graphs.git"
 Issues = "https://github.com/yourusername/ml-accelerated-dynamic-graphs/issues"
 
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["dsp*"]
+
+[tool.setuptools.package-dir]
+"" = "src"
+
 [tool.black]
 line-length = 88
 target-version = ['py313']
@@ -38,8 +45,8 @@ extend-exclude = '''
   | \.git
   | \.hg
   | \.mypy_cache
-  | \.tox
-  | \.venv
+  | .tox
+  | .venv
   | build
   | dist
 )/
